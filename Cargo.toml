@@ -1,18 +1,10 @@
 [package]
-name = "sigmaos-database"
+name = "sigmaos_database"
 version = "0.1.0"
 edition = "2021"
-authors = ["SigmaOS Project"]
-description = "Database and storage engines"
-license = "GPL-3.0-or-later"
-repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-database"
-readme = "README.md"
-keywords = ["database", "sql", "storage"]
-categories = ["database"]
+license = "MIT"
+description = "SigmaOS database component inspired by Linux Mint / Omarchy / Arch Linux."
 
-[dependencies]
-sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
-sigmaos-storage = { version = "0.1", path = "../SigmaOS-storage" }
-
-[profile.release]
-opt-level = 3
+[lib]
+name = "sigmaos_database"
+path = "src/lib.rs"
