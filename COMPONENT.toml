@@ -3,12 +3,12 @@ name = "SigmaOS-database"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "database component"
+description = "Part of SigmaOS architecture: SigmaOS-database"
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
